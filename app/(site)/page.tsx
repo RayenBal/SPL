@@ -12,22 +12,22 @@ import Container from "@/components/Container";
 export default function Home() {
   return (
     <>
-      <section className="relative h-[72vh] flex items-center overflow-hidden">
-        <Image src="/hero-truck.jpg" alt="Camion en atelier" fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0C2D48]/70 via-black/40 to-transparent" />
-        <Container className="relative z-10 text-white">
+      <section className="relative h-[72vh] flex items-center overflow-hidden text-center">
+        <Image src="/hero-truck.jpg" alt="Camion poids lourd" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0C2D48]/80 to-transparent" />
+        <Container className="relative z-10 text-white py-10">
           <Reveal>
-            <h1 className="text-4xl sm:text-6xl font-semibold leading-tight max-w-3xl">
+            <h1 className="mx-auto text-5xl sm:text-6xl font-semibold leading-tight max-w-4xl">
               La référence en diagnostic et maintenance des poids lourds en Tunisie
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-4 max-w-2xl text-lg text-white/90">
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90">
               Depuis 1995, Société Le Poids Lourd accompagne les professionnels du transport.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
-            <div className="mt-8 flex gap-4">
+            <div className="mt-8 flex gap-4 justify-center">
               <Link href="#services" className="px-5 py-3 rounded-md bg-primary text-white font-medium">Nos services</Link>
               <Link href="/contact" className="px-5 py-3 rounded-md border border-white/80 text-white font-medium">Demander un devis</Link>
             </div>

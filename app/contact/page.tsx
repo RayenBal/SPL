@@ -15,9 +15,10 @@ export default function ContactPage() {
         <div className="bg-white border border-black/5 rounded-xl p-6">
           <ContactForm />
           <div className="mt-4 text-sm text-foreground/80">
-            Adresse : Zone Industrielle Charguia II, Tunis, Tunisie
-            <br />Téléphone : +216 71 123 456 — Email : contact@lepoidslourd.tn
-            <br />Horaires : Lun-Ven 8h → 18h
+            Adresse : Q7WG+MXW, Radès, Tunisie
+            <br />Téléphones : <a href="tel:+21627718815">+216 27 718 815</a> — <a href="tel:+21625313639">+216 25 313 639</a>
+            <br />Email : <a href="mailto:contact@lepoidslourd.tn">contact@lepoidslourd.tn</a>
+            <br />Horaires : Lun–Sam : 8h00–18h00
           </div>
           <a
             href="https://wa.me/21671123456"

@@ -15,9 +15,10 @@ export default function Footer() {
           <h4 className="font-medium">Coordonnées</h4>
           <ul className="mt-2 text-sm space-y-1">
             <li>Q7WG+MXW, Radès, Tunisie</li>
-            <li>+216 71 123 456</li>
-            <li>contact@lepoidslourd.tn</li>
-            <li>Lun-Ven 8h → 18h</li>
+            <li><a href="tel:+21627718815">+216 27 718 815 (Direction)</a></li>
+            <li><a href="tel:+21625313639">+216 25 313 639 (Gérant)</a></li>
+            <li><a href="mailto:contact@lepoidslourd.tn">contact@lepoidslourd.tn</a></li>
+            <li>Lun–Sam : 8h00–18h00</li>
           </ul>
         </div>
         <div>

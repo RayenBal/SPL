@@ -24,9 +24,9 @@ export default function ServiceCard({ slug, title, description, icon }: Props) {
   return (
     <Link
       href={`/services/${slug}`}
-      className="group rounded-xl border border-black/5 p-6 bg-white shadow-sm hover:shadow-md transition-shadow hover:-translate-y-0.5 will-change-transform"
+      className="group rounded-xl border border-black/5 p-6 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 will-change-transform"
     >
-      <div className="h-12 w-12 rounded-lg bg-secondary/30 text-primary grid place-items-center">
+      <div className="h-12 w-12 rounded-lg bg-secondary/40 text-[#0C2D48] grid place-items-center">
         <Icon size={24} />
       </div>
       <h3 className="mt-4 text-xl font-semibold">{title}</h3>

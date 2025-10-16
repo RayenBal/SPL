@@ -1,15 +1,8 @@
 import type { ReactNode } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
+// Site layout scope; Navbar/Footer provided globally in root layout
 export default function SiteLayout({ children }: { children: ReactNode }) {
-  return (
-    <div className="min-h-dvh flex flex-col bg-background text-foreground">
-      <Navbar />
-      <div className="flex-1">{children}</div>
-      <Footer />
-    </div>
-  );
+  return <div className="min-h-dvh bg-background text-foreground">{children}</div>;
 }
 
 
