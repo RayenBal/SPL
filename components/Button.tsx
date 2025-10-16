@@ -11,8 +11,8 @@ type ButtonProps = {
 
 export default function Button({ href, children, variant = "primary", className }: ButtonProps) {
   const base = clsx(
-    "inline-flex items-center justify-center h-11 px-5 rounded-md font-medium transition-colors",
-    variant === "primary" && "bg-primary text-white hover:opacity-90",
+    "inline-flex items-center justify-center h-11 px-5 rounded-lg font-medium transition-all",
+    variant === "primary" && "bg-primary text-white hover:opacity-95 shadow-sm hover:shadow",
     variant === "secondary" && "border border-foreground/30 text-foreground hover:bg-foreground/5",
     className
   );

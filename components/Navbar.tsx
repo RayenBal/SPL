@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -18,11 +19,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur border-b border-black/5">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur border-b border-black/5 shadow-sm">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          {/* Placeholder logo */}
-          <span className="h-8 w-8 rounded bg-primary inline-block" />
+          <Image src="/logo.png" alt="SPL" width={32} height={32} className="rounded" />
           <span className="font-semibold">Société Le Poids Lourd</span>
         </Link>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
             );
           })}
           <li className="md:ml-4 md:py-0 py-3 px-6 md:px-0">
-            <Link href="/contact" className="inline-flex items-center justify-center h-10 px-4 rounded-md bg-primary text-white font-medium">
+            <Link href="/contact" className="inline-flex items-center justify-center h-10 px-4 rounded-lg bg-primary text-white font-medium hover:opacity-95">
               Demander un devis
             </Link>
           </li>

@@ -14,7 +14,7 @@ export default function Footer() {
         <div>
           <h4 className="font-medium">Coordonnées</h4>
           <ul className="mt-2 text-sm space-y-1">
-            <li>Zone Industrielle Charguia II, Tunis, Tunisie</li>
+            <li>Q7WG+MXW, Radès, Tunisie</li>
             <li>+216 71 123 456</li>
             <li>contact@lepoidslourd.tn</li>
             <li>Lun-Ven 8h → 18h</li>
@@ -28,6 +28,10 @@ export default function Footer() {
             <li><Link href="/realisations">Réalisations</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
+          <div className="mt-3 flex gap-3">
+            <a href="#" className="text-foreground/70 hover:text-primary">Facebook</a>
+            <a href="#" className="text-foreground/70 hover:text-primary">LinkedIn</a>
+          </div>
         </div>
       </div>
       <div className="border-t border-black/5 py-4 text-center text-sm">

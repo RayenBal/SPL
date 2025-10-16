@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Container from "@/components/Container";
 import { notFound } from "next/navigation";
 import { services } from "@/data/servicesData";
 import Button from "@/components/Button";
@@ -46,7 +47,7 @@ export default function ServiceDetail({ params }: any) {
           <h1 className="text-4xl font-semibold">{service.title}</h1>
         </div>
       </section>
-      <section className="max-w-6xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
+      <Container className="py-12 grid gap-10 md:grid-cols-3">
         <div className="md:col-span-2">
           <p className="text-lg text-foreground/90">{service.description}</p>
           <h2 className="mt-8 text-xl font-semibold">Opérations possibles</h2>
@@ -65,7 +66,7 @@ export default function ServiceDetail({ params }: any) {
           </div>
           <Button href="/contact" className="mt-6 w-full">Demander un devis</Button>
         </aside>
-      </section>
+      </Container>
     </main>
   );
 }

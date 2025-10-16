@@ -34,7 +34,7 @@ export default function ContactPage() {
             className="w-full h-[420px]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Charguia%20II%2C%20Tunis&output=embed"
+            src="https://www.google.com/maps?q=Q7WG%2BMXW%2C%20Rad%C3%A8s%2C%20Tunisie&output=embed"
           />
         </div>
       </div>

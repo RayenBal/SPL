@@ -7,14 +7,15 @@ import { services } from "@/data/servicesData";
 import { stats } from "@/data/statsData";
 import Link from "next/link";
 import Image from "next/image";
+import Container from "@/components/Container";
 
 export default function Home() {
   return (
     <>
       <section className="relative h-[72vh] flex items-center overflow-hidden">
-        <Image src="/hero-truck.jpg" alt="Camion en atelier" fill className="object-cover" priority />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-white">
+        <Image src="/hero-truck.jpg" alt="Camion en atelier" fill className="object-cover" priority sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0C2D48]/70 via-black/40 to-transparent" />
+        <Container className="relative z-10 text-white">
           <Reveal>
             <h1 className="text-4xl sm:text-6xl font-semibold leading-tight max-w-3xl">
               La référence en diagnostic et maintenance des poids lourds en Tunisie
@@ -31,10 +32,10 @@ export default function Home() {
               <Link href="/contact" className="px-5 py-3 rounded-md border border-white/80 text-white font-medium">Demander un devis</Link>
             </div>
           </Reveal>
-        </div>
+        </Container>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 py-12" id="presentation">
+      <Container className="py-12" id="presentation">
         <Reveal>
           <SectionTitle title="Présentation" />
         </Reveal>
@@ -49,9 +50,9 @@ export default function Home() {
             <Reveal key={s.label} delay={0.05 * i}><StatsCounter value={s.value} label={s.label} /></Reveal>
           ))}
         </div>
-      </section>
+      </Container>
 
-      <section className="max-w-6xl mx-auto px-6 py-12" id="services">
+      <Container className="py-12" id="services">
         <Reveal>
           <SectionTitle title="Nos services" subtitle="Diagnostic, entretien, maintenance, assistance, pièces" />
         </Reveal>
@@ -62,9 +63,9 @@ export default function Home() {
             </Reveal>
           ))}
         </div>
-      </section>
+      </Container>
 
-      <section className="max-w-6xl mx-auto px-6 py-12" id="pourquoi">
+      <Container className="py-12" id="pourquoi">
         <Reveal>
           <SectionTitle title="Pourquoi nous choisir ?" />
         </Reveal>
@@ -78,9 +79,9 @@ export default function Home() {
             <Reveal key={v} delay={0.05 * i}><li className="rounded-xl border border-black/5 bg-white p-4">{v}</li></Reveal>
           ))}
         </ul>
-      </section>
+      </Container>
 
-      <section className="max-w-4xl mx-auto px-6 py-12" id="temoignages">
+      <Container className="max-w-4xl py-12" id="temoignages">
         <Reveal>
           <SectionTitle title="Témoignages" />
         </Reveal>
@@ -89,11 +90,11 @@ export default function Home() {
             <Testimonials />
           </Reveal>
         </div>
-      </section>
+      </Container>
 
       <section className="relative py-16">
-        <Image src="/cta.jpg" alt="Contact" fill className="object-cover" />
-        <div className="absolute inset-0 bg-black/60" />
+        <Image src="/cta.jpg" alt="Contact" fill className="object-cover" sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center text-white">
           <h3 className="text-2xl font-semibold">Besoin d’un diagnostic ou d’un devis ?</h3>
           <Link href="/contact" className="mt-6 inline-flex h-11 px-6 rounded-md bg-primary text-white font-medium">Contactez-nous</Link>
