@@ -56,7 +56,7 @@ export default function Home() {
         <Reveal>
           <SectionTitle title="Nos services" subtitle="Diagnostic, entretien, maintenance, assistance, pièces" />
         </Reveal>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
           {services.map((s, i) => (
             <Reveal key={s.slug} delay={0.05 * i}>
               <ServiceCard slug={s.slug} title={s.title} description={s.description} icon={s.icon} />

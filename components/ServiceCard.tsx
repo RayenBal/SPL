@@ -24,14 +24,14 @@ export default function ServiceCard({ slug, title, description, icon }: Props) {
   return (
     <Link
       href={`/services/${slug}`}
-      className="group rounded-xl border border-black/5 p-6 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 will-change-transform"
+      className="group h-full flex flex-col rounded-xl border border-black/5 p-6 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 will-change-transform"
     >
       <div className="h-12 w-12 rounded-lg bg-secondary/40 text-[#0C2D48] grid place-items-center">
         <Icon size={24} />
       </div>
       <h3 className="mt-4 text-xl font-semibold">{title}</h3>
       <p className="mt-2 text-foreground/80 line-clamp-3">{description}</p>
-      <span className="mt-4 inline-flex items-center gap-2 text-primary font-medium">
+      <span className="mt-4 inline-flex items-center gap-2 text-primary font-medium mt-auto">
         En savoir plus
         <svg width="16" height="16" viewBox="0 0 24 24" className="transition-transform group-hover:translate-x-0.5"><path fill="currentColor" d="M13 5l7 7l-7 7v-4H4v-6h9z"/></svg>
       </span>
