@@ -1,0 +1,57 @@
+   ▲ Next.js 15.0.3
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/14) ...
+   Generating static pages (3/14) 
+   Generating static pages (6/14) 
+   Generating static pages (10/14) 
+ ✓ Generating static pages (14/14)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                    Size     First Load JS
+┌ ○ /                                          141 B           100 kB
+├ ○ /_not-found                                141 B           100 kB
+├ ○ /a-propos                                  141 B           100 kB
+├ ○ /contact                                   2.1 kB          107 kB
+├ ○ /realisations                              520 B           106 kB
+├ ○ /services                                  175 B           109 kB
+└ ● /services/[slug]                           183 B           114 kB
+    ├ /services/diagnostic-electronique
+    ├ /services/entretien-moteur-transmission
+    ├ /services/maintenance-preventive
+    └ [+2 more paths]
++ First Load JS shared by all                  100 kB
+  ├ chunks/4bd1b696-586f5bebbd11bf39.js        52.5 kB
+  ├ chunks/517-90275312aa4200c9.js             45.5 kB
+  └ other shared chunks (total)                1.91 kB
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+✨ [next-sitemap] Loading next-sitemap config: file:///mnt/hdd/rayen/Desktop/SPL/next-sitemap.config.js
+✅ [next-sitemap] Generation completed
+┌───────────────┬────────┐
+│ (index)       │ Values │
+├───────────────┼────────┤
+│ indexSitemaps │ 1      │
+│ sitemaps      │ 1      │
+└───────────────┴────────┘
+-----------------------------------------------------
+ SITEMAP INDICES 
+-----------------------------------------------------
+
+   ○ https://www.lepoidslourd.tn/sitemap.xml
+
+
+-----------------------------------------------------
+ SITEMAPS 
+-----------------------------------------------------
+
+   ○ https://www.lepoidslourd.tn/sitemap-0.xml
+
+

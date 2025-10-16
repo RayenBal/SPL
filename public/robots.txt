@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.lepoidslourd.tn
+
+# Sitemaps
+Sitemap: https://www.lepoidslourd.tn/sitemap.xml

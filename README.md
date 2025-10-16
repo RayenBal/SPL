@@ -1,3 +1,58 @@
+# Société Le Poids Lourd – Site Next.js
+
+Site vitrine professionnel construit avec Next.js 15 (App Router), React 18, TypeScript et Tailwind CSS.
+
+## Stack
+- Next.js 15 (App Router) + React 18 + TypeScript
+- Tailwind CSS 4
+- Framer Motion (animations)
+- React Icons
+- EmailJS (formulaire de contact)
+
+## Démarrage local
+```bash
+npm install
+npm run dev
+# http://localhost:3000
+```
+
+## Variables d’environnement
+Copiez ces variables (EmailJS) puis renseignez-les:
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
+```
+
+Sur Vercel, ajoutez-les dans Project Settings → Environment Variables.
+
+## Build & déploiement
+```bash
+npm run build
+npm start
+```
+Déploiement recommandé: Vercel (import du repo → Build Command: `npm run build`).
+
+## SEO
+- Metadata API (layout + pages)
+- Open Graph dynamique pour chaque service
+- JSON-LD (Organization global, Service + Breadcrumb par service, WebSite + SearchAction)
+
+## Structure
+- `app/(site)/page.tsx`: Accueil
+- `app/services/page.tsx` et `app/services/[slug]`: Services
+- `app/a-propos/page.tsx`: À propos
+- `app/realisations/page.tsx`: Réalisations
+- `app/contact/page.tsx`: Contact (EmailJS)
+- `app/not-found.tsx`, `app/error.tsx`: UIs d’erreur
+
+## Personnalisation
+- Remplacez les images de `/public/` (logo, hero, services, galerie)
+- Mettez à jour les témoignages et les données des services dans `data/`
+
+## Licence
+Propriété de Société Le Poids Lourd.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
